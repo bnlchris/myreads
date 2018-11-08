@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import CurrentlyReading from './CurrentlyReading'
 import WantToRead from './WantToRead'
+import Read from './Read'
 
 class App extends Component {
   render() {
@@ -20,6 +21,10 @@ class App extends Component {
 
         <div>
           <WantToRead/>
+        </div>
+
+        <div>
+          <Read/>
         </div>
 
       </div>
