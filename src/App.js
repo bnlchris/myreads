@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import CurrentlyReading from './CurrentlyReading'
+import WantToRead from './WantToRead'
 
 class App extends Component {
   render() {
@@ -15,6 +16,10 @@ class App extends Component {
 
         <div>
           <CurrentlyReading/>
+        </div>
+
+        <div>
+          <WantToRead/>
         </div>
 
       </div>
