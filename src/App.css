@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-header {
+.App-header, .search-books-input-wrapper {
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -10,4 +10,12 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+
+.button-to-close-search {
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
 }
