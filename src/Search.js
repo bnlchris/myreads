@@ -12,14 +12,14 @@ class Search extends Component {
                 			<input type="text" placeholder="Search by title or author"/>
               			</div>
             		</div>
-
-            		<div className='button-to-close-search'>
-            			<button type="button">Back to my book shelves</button>
-            		</div>
             
             		<div className="search-books-results">
               			<ol className="books-grid"></ol>
             		</div>
+
+                <footer className='search-footer'>
+                  <h4>Back to my book shelves</h4>
+                </footer>
 
           		</div>
 			</div>
