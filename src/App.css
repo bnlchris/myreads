@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.App-header, .search-books-input-wrapper {
+.app-header, .search-books-input-wrapper {
   background-color: blue;
   display: flex;
   flex-direction: column;
@@ -12,10 +12,35 @@
   color: white;
 }
 
+/* Main Page */
+
+.app-footer {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+/* Search Page */
+
 .button-to-close-search {
     padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+}
+
+.search-footer {
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  margin-top: 50px;
 }
