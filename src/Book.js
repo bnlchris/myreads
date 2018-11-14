@@ -2,11 +2,17 @@ import React, { Component } from 'react';
 
 class Book extends Component {
 	render() {
+		
+		// check if book has a thumbnail
+		let bookHasThumbnail = this.props.book.imageLinks ?
+		this.props.book.imageLinks.thumbnail :
+		'';
+
 		return (
 			<div className='book'>
 				
 				<div className='book-cover'
-					style={{ width: 128, height: 193, backgroundImage: `url("${this.props.book.imageLinks.thumbnail}")`}}>
+					style={{ width: 128, height: 193, backgroundImage: `url("${bookHasThumbnail}")`}}>
 				</div>
 
 				<div className='shelve-changer'>
