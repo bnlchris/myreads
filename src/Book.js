@@ -6,7 +6,7 @@ class Book extends Component {
 			<div className='book'>
 				
 				<div className='book-cover'
-					style={{ width: 128, height: 193, backgroundImage: ''}}>
+					style={{ width: 128, height: 193, backgroundImage: `url("${this.props.book.imageLinks.thumbnail}")`}}>
 				</div>
 
 				<div className='shelve-changer'>
@@ -19,8 +19,8 @@ class Book extends Component {
 					</select>
 				</div>
 
-				<div className='book-title'></div>
-				<div className='book-author'></div>
+				<div className='book-title'>{this.props.book.title}</div>
+				<div className='book-author'>{this.props.book.authors}</div>
 
 			</div>
 		)
