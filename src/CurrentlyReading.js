@@ -29,6 +29,8 @@ class CurrentlyReading extends Component {
 					</ol>
 				</div>
 
+				<hr/>
+
 			</div>
 			)
 	}
