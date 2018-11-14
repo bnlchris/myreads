@@ -29,6 +29,8 @@ class WantToRead extends Component {
 					</ol>
 				</div>
 
+				<hr/>
+
 			</div>
 			)
 	}
