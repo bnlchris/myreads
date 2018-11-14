@@ -24,6 +24,29 @@
   color: white;
 }
 
+.grid {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	list-style-type: none;
+	text-align: left;
+}
+
+.book {
+	width: 150px;
+}
+
+.book-title {
+	font-size: 0.8em;
+	color: DarkGreen;
+}
+
+.book-author {
+	font-size: 0.7em;
+	font-weight: bold;
+	color: SaddleBrown;
+}
+
 /* Search Page */
 
 .button-to-close-search {
