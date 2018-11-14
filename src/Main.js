@@ -5,15 +5,15 @@ import Read from './Read';
 
 class Main extends Component {
 	render() {
-		return (
+    return (
 			<div className='main-page'>
 				<header className='app-header'>
           <h1>MyReads</h1>
         </header>
 
-        <CurrentlyReading/>
-        <WantToRead/>
-        <Read/>
+        <CurrentlyReading books={this.props.books}/>
+        <WantToRead books={this.props.books}/>
+        <Read books={this.props.books}/>
 
         <footer className='app-footer'>
           <h4>Click here to search for further books</h4>
