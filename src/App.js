@@ -18,12 +18,23 @@ class App extends Component {
 		})
 	}
 
+	// changes the respective book shelf on click
+	changeShelf(book, shelf) {
+		BooksAPI.update(book, shelf)
+
+		// fetch data again, after new alignment of books
+		BooksAPI.getAll().then((books) => {
+			this.setState({books})
+		})
+	}
+
   render() {
     return (
       <div className="App">
         
         <Main
         	books={this.state.books}
+        	changeShelf={this.changeShelf}
         />
 
       </div>
