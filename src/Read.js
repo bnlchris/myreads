@@ -21,6 +21,7 @@ class Read extends Component {
 									<li key={book.id}>
 										<Book
 											book={book}
+											changeShelf={this.props.changeShelf}
 										/>
 									</li>
 								))
