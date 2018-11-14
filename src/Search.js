@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Book from './Book';
+//BooksApi.js is needed to fetch the data for displaying books
+import * as BooksAPI from './BooksAPI';
 
 class Search extends Component {
 	
   state = {
-    query: ''
+    query: '',
+    booksInSearch: []
   }
 
   // method to update the UI to changes in the query field
@@ -31,8 +35,12 @@ class Search extends Component {
             		</div>
             
             		<div className="search-books-results">
-              			<ol className="books-grid"></ol>
-            		</div>
+              			
+                    <ol className="books-grid">
+
+                    </ol>
+            		
+                </div>
 
                 <footer className='search-footer'>
                   <h4>Back to my book shelves</h4>
@@ -42,6 +50,7 @@ class Search extends Component {
 			</div>
 		)
 	}
+
 }
 
 export default Search;
