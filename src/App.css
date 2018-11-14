@@ -20,6 +20,7 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
     border-color: blue;
+    border-width: 2px;
 }
 
 .app-footer {
