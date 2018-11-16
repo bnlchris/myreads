@@ -11,9 +11,9 @@ class Main extends Component {
           <h1>MyReads</h1>
         </header>
 
-        <CurrentlyReading books={this.props.books}/>
-        <WantToRead books={this.props.books}/>
-        <Read books={this.props.books}/>
+        <CurrentlyReading books={this.props.books} changeShelf={this.props.changeShelf}/>
+        <WantToRead books={this.props.books} changeShelf={this.props.changeShelf}/>
+        <Read books={this.props.books} changeShelf={this.props.changeShelf}/>
 
         <footer className='app-footer'>
           <h4>Click here to search for further books</h4>
