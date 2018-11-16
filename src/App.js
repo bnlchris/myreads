@@ -18,11 +18,10 @@ class App extends Component {
 		})
 	}
 
-	// changes the respective book shelf on click
-	changeShelf(book, shelf) {
+	// changes the respective book shelf on click, then fetch data again
+	changeShelf = (book, shelf) => {
 		BooksAPI.update(book, shelf)
 
-		// fetch data again, after new alignment of books
 		BooksAPI.getAll().then((books) => {
 			this.setState({books})
 		})
