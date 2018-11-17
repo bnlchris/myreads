@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import CurrentlyReading from './CurrentlyReading';
 import WantToRead from './WantToRead';
 import Read from './Read';
+//Needed for using React Router for navigation
+import {Link} from 'react-router-dom';
 
 class Main extends Component {
 	render() {
@@ -15,9 +17,11 @@ class Main extends Component {
         <WantToRead books={this.props.books} changeShelf={this.props.changeShelf}/>
         <Read books={this.props.books} changeShelf={this.props.changeShelf}/>
 
-        <footer className='app-footer'>
-          <h4>Click here to search for further books</h4>
-        </footer>
+        <Link to='/Search'
+            className='app-footer'
+            ><h4>Click here to search for further books</h4>
+        </Link>
+
       </div>	
 		)	
 	}
