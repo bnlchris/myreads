@@ -24,10 +24,15 @@ class Search extends Component {
     //check if there is any typing in the input field
     if (query) {
       BooksAPI.search(query).then((booksInSearch) => {
-      this.setState({booksInSearch: booksInSearch})
+      // check if booksInSearch is an array to map over
+      if (booksInSearch.error) {
+        this.setState({booksInSearch: []});
+      } else {
+        this.setState({booksInSearch: booksInSearch});
+        }
       })
     } else {
-      this.setState({booksInSearch: []})
+      this.setState({booksInSearch: []});
     }
   }
 
