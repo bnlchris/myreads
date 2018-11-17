@@ -12,6 +12,12 @@
   color: white;
 }
 
+select,
+.app-footer,
+.search-footer {
+  cursor: pointer;
+}
+
 /* Main Page */
 
 hr {
