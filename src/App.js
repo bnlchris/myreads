@@ -4,6 +4,7 @@ import Main from './Main';
 import Search from './Search';
 //BooksApi.js is needed to fetch the data for displaying books
 import * as BooksAPI from './BooksAPI';
+import {Route} from 'react-router-dom';
 
 class App extends Component {
   
@@ -31,11 +32,21 @@ class App extends Component {
     return (
       <div className="App">
         
-        <Main
-        	books={this.state.books}
-        	changeShelf={this.changeShelf}
-        />
+	      <Route exact path='/' render={() => (
+	      	<Main
+	        	books={this.state.books}
+	        	changeShelf={this.changeShelf}
+	        />
+	      	)}
+	      />
 
+	      <Route path='/Search' render={() => (
+	      	<Search
+	        	books={this.state.books}
+	        	changeShelf={this.changeShelf}
+	        />
+	      	)}
+	      />
       </div>
     );
   }
