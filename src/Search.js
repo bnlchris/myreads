@@ -50,7 +50,7 @@ class Search extends Component {
             
             		<div className="search-books-results">
               			
-                    <ol className="books-grid">
+                    <ol className="grid">
 
                       {
                         this.state.booksInSearch.map(booksInSearch => (
