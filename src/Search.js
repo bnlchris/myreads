@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Book from './Book';
+//import for displaying the respective items on the search page
+import escapeRegExp from 'escape-string-regexp'
 //BooksApi.js is needed to fetch the data for displaying books
 import * as BooksAPI from './BooksAPI';
 
@@ -15,6 +17,18 @@ class Search extends Component {
     this.setState ({
       query: query
     })
+    this.getBooksFromSearch(query);
+  }
+
+  getBooksFromSearch = (query) => {
+    //check if there is any typing in the input field
+    if (query) {
+      BooksAPI.search(query).then((booksInSearch) => {
+      this.setState({booksInSearch: booksInSearch})
+      })
+    } else {
+      this.setState({booksInSearch: []})
+    }
   }
 
   render() {
@@ -37,6 +51,16 @@ class Search extends Component {
             		<div className="search-books-results">
               			
                     <ol className="books-grid">
+
+                      {
+                        this.state.booksInSearch.map(booksInSearch => (
+                          <li key={booksInSearch.id}>
+                            <Book
+                              book={booksInSearch}
+                            />
+                          </li>
+                        ))
+                      }
 
                     </ol>
             		
