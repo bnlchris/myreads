@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Book from './Book';
-//import for displaying the respective items on the search page
-import escapeRegExp from 'escape-string-regexp'
 //BooksApi.js is needed to fetch the data for displaying books
 import * as BooksAPI from './BooksAPI';
+//Needed for using React Router for navigation
+import {Link} from 'react-router-dom';
 
 class Search extends Component {
 	
@@ -72,9 +72,10 @@ class Search extends Component {
             		
                 </div>
 
-                <footer className='search-footer'>
-                  <h4>Back to my book shelves</h4>
-                </footer>
+                <Link to='/'
+                  className='search-footer'
+                  ><h4>Back to my book shelves</h4>
+                </Link>
 
           		</div>
 			</div>
