@@ -18,6 +18,11 @@ select,
   cursor: pointer;
 }
 
+.app-footer,
+.search-footer {
+  text-decoration: none;
+}
+
 /* Main Page */
 
 hr {
