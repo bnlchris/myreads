@@ -61,6 +61,14 @@ class Search extends Component {
                         this.state.booksInSearch.map(booksInSearch => {
                           // assign "none" for any book without a selected shelf
                           let shelf = 'none';
+
+                          //check if respective book in search is assigned to a shelf already
+                          this.props.books.map(book => (
+                            book.id === booksInSearch.id ?
+                            shelf = book.shelf :
+                            ''
+                          ))
+
                           return (
                             <li key={booksInSearch.id}>
                             <Book
