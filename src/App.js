@@ -42,7 +42,7 @@ class App extends Component {
 
 	      <Route path='/Search' render={() => (
 	      	<Search
-	        	books={this.state.books}
+	        	books={this.props.books}
 	        	changeShelf={this.changeShelf}
 	        />
 	      	)}
