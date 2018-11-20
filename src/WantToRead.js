@@ -22,6 +22,7 @@ class WantToRead extends Component {
 										<Book
 											book={book}
 											changeShelf={this.props.changeShelf}
+											currentShelf='wantToRead'
 										/>
 									</li>
 								))
