@@ -12,6 +12,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
 
+IMPORTANT: This application works with a remote server to fetch data. Be sure to find the relevant [BooksAPI.js file on Github](https://github.com/udacity/reactnd-project-myreads-starter/blob/master/src/BooksAPI.js).
+
 ## Resources
 
 This project is last but one project of [Udacity's Front End Nanodegree](https://eu.udacity.com/course/front-end-web-developer-nanodegree--nd001).
