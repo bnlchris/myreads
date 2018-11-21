@@ -4,14 +4,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
-### Run `npm install` to install all project dependencies
+### `npm install`
 
-### Then, run `npm start`
+to install all project dependencies
+
+### `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### IMPORTANT:
+### Be aware:
 This application works with a remote server to fetch data. Be sure to find the relevant [BooksAPI.js file on Github](https://github.com/udacity/reactnd-project-myreads-starter/blob/master/src/BooksAPI.js).
 
 ## Resources
