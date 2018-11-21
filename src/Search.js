@@ -27,7 +27,8 @@ class Search extends Component {
       // check if booksInSearch is an array to map over
       if (booksInSearch.error) {
         this.setState({booksInSearch: []});
-      } else {
+        // checks for possible old queries (when input was typed very quickly)
+      } else if (query === this.state.query) {
         this.setState({booksInSearch: booksInSearch});
         }
       })
