@@ -1,18 +1,17 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## How to start
 
 In the project directory, you can run:
 
-### `npm start`
+# Run `npm install` to install all project dependencies
+
+# Then, run `npm start`
 
 Runs the app in the development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
-
-IMPORTANT: This application works with a remote server to fetch data. Be sure to find the relevant [BooksAPI.js file on Github](https://github.com/udacity/reactnd-project-myreads-starter/blob/master/src/BooksAPI.js).
+# IMPORTANT: This application works with a remote server to fetch data. Be sure to find the relevant [BooksAPI.js file on Github](https://github.com/udacity/reactnd-project-myreads-starter/blob/master/src/BooksAPI.js).
 
 ## Resources
 
