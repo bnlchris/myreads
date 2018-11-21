@@ -21,11 +21,12 @@ class App extends Component {
 
 	// changes the respective book shelf on click, then fetch data again
 	changeShelf = (book, shelf) => {
-		BooksAPI.update(book, shelf)
-
-		BooksAPI.getAll().then((books) => {
+		BooksAPI.update(book, shelf).then((books) => {
+			BooksAPI.getAll().then((books) => {
 			this.setState({books})
+			})
 		})
+
 	}
 
   render() {
